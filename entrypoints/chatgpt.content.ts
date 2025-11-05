@@ -8,6 +8,9 @@ export default defineContentScript({
       refuseLoginPrompt: {
         executed: false,
       },
+      refuseLoginModelPrompt: {
+        executed: false,
+      },
     };
     const observer = new MutationObserver(() => {
       if (!functionalities.rejectCookies.executed) {
@@ -28,6 +31,16 @@ export default defineContentScript({
           (refuseLoginButton as HTMLElement)?.click();
           console.log("Refused login prompt");
           functionalities.refuseLoginPrompt.executed = true;
+        }
+      }
+      if (!functionalities.refuseLoginModelPrompt.executed) {
+        const refuseLoginModelButton = document.querySelector(
+          'button[data-testid="close-button"]'
+        );
+        if (refuseLoginModelButton) {
+          (refuseLoginModelButton as HTMLElement)?.click();
+          console.log("Refused login model prompt");
+          functionalities.refuseLoginModelPrompt.executed = true;
         }
       }
       const allFunctionsExecuted = Object.values(functionalities).every(
