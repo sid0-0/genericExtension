@@ -6,4 +6,5 @@ export default defineConfig({
   manifest: {
     permissions: ["scripting", "activeTab"],
   },
+  outDir: "dist",
 });
