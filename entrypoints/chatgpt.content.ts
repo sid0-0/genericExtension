@@ -8,6 +8,9 @@ export default defineContentScript({
       refuseLoginPrompt: {
         executed: false,
       },
+      deleteLoginPrompt: {
+        executed: false,
+      },
       refuseLoginModelPrompt: {
         executed: false,
       },
@@ -41,6 +44,16 @@ export default defineContentScript({
           (refuseLoginModelButton as HTMLElement)?.click();
           console.log("Refused login model prompt");
           functionalities.refuseLoginModelPrompt.executed = true;
+        }
+      }
+      if (!functionalities.deleteLoginPrompt.executed) {
+        const loginPrompt = document.querySelector(
+          "aside.bg-token-main-surface-primary"
+        );
+        if (loginPrompt) {
+          (loginPrompt as HTMLElement)?.remove();
+          console.log("Deleted login prompt");
+          functionalities.deleteLoginPrompt.executed = true;
         }
       }
       const allFunctionsExecuted = Object.values(functionalities).every(
