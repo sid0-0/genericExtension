@@ -11,9 +11,20 @@ This extension provides a collection of small enhancements for your daily web wo
 3. GitHub
     a. Add copy button to items in summaries.
 ## How to use:
-1. Clone appropriate browser name directory from dist directory
-2. Open chrome `Manage Extensions` page
-3. Enable Developer mode on top right
-4. Click on `Load Unpacked`
-5. Select the folder cloned in step 1
-6. [Optional] Go to extension `Details` and enable `Allow in Incognito`
+
+### Option 1: Download Pre-built Release (Recommended)
+1. Go to the [Releases](https://github.com/yodel/genericExtension/releases) page.
+2. Download the latest `Quick-Tweaks-Chrome.zip` (or Firefox version).
+3. Extract the ZIP file on your computer.
+4. Open your browser's extension page:
+    - **Chrome**: `chrome://extensions/`
+    - **Firefox**: `about:debugging#/runtime/this-firefox`
+5. Enable **Developer mode** (top right in Chrome).
+6. Click **Load unpacked** and select the extracted folder.
+7. [Optional] Go to extension `Details` and enable `Allow in Incognito`.
+
+### Option 2: Build from Source
+1. Clone the repository.
+2. Run `pnpm install`.
+3. Run `npm run build`.
+4. Follow steps 4-7 from Option 1, selecting the `dist/chrome-mv3` (or `dist/firefox-mv2`) folder.
