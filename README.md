@@ -1,6 +1,6 @@
-# General Extension
+# Quick Tweaks
 
-This is general extension made for some random functionalities I need in my workflow.
+This extension provides a collection of small enhancements for your daily web workflow.
 
 ## List of features:
 1. ChatGPT  

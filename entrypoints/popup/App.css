@@ -9,11 +9,24 @@
   min-width: 280px;
 }
 
-h3 {
-  margin-top: 0;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   border-bottom: 1px solid #444;
+  margin-bottom: 16px;
   padding-bottom: 8px;
-  margin-bottom: 12px;
+}
+
+.header h3 {
+  margin: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.header-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .feature-list {

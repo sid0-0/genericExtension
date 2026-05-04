@@ -6,7 +6,10 @@ import "./App.css";
 function App() {
   return (
     <div className="container">
-      <h3>Functionalities:</h3>
+      <div className="header">
+        <img src="/icons/32.png" alt="Quick Tweaks" className="header-icon" />
+        <h3>Quick Tweaks</h3>
+      </div>
       <ul className="feature-list">
         <li>
           <strong>ChatGPT</strong>
