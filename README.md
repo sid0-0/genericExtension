@@ -6,7 +6,10 @@ This is general extension made for some random functionalities I need in my work
 1. ChatGPT  
     a. Reject non-essential cookies.    
     b. Stay logged out of your account. 
-
+2. Gemini
+    a. Remove chat width restrictions.
+3. GitHub
+    a. Add copy button to items in summaries.
 ## How to use:
 1. Clone appropriate browser name directory from dist directory
 2. Open chrome `Manage Extensions` page

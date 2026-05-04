@@ -1,8 +1,37 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem;
+  text-align: left;
+}
+
+.container {
+  min-width: 280px;
+}
+
+h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #444;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.feature-list {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.feature-list > li {
+  margin-bottom: 12px;
+}
+
+.feature-list ul {
+  margin-top: 4px;
+  padding-left: 18px;
+  list-style-type: disc;
+  font-size: 0.9em;
+  color: #bbb;
 }
 
 .logo {
